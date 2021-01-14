@@ -5,13 +5,28 @@ body {
     justify-content: center;
     min-height: 100vh;
     font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #ff6663;
 }
+
+.main {
+    background-color: #FEFFFE;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    color: #0B3954;
+}
+
+.header {
+    text-align: center;
+    font-size: 30px;
+}
+
 
 .sketch-container {
     width: 500px;
     height: 500px;
     display: grid;
-
 }
 
 .control {
@@ -24,21 +39,27 @@ body {
 .btn-clear {
     padding: .5rem;
     width: 100%;
-    margin-top: 1rem;
+    margin: 3rem 0rem;
     border: none;
-    background-color: green;
-    color: white;
+    background-color: #0B3954;
+    color: #FEFFFE;
     border-radius: 10px;
     text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    
 }
 
 .box {
-    border: 1px solid lightgrey;
+    border: none;
+    margin: .1rem;
+    border-radius: 25%;
+    background-color: #BFD7EA;
     
 }
 
 .dark {
-    background-color: grey;
+    background-color: #0B3954;
 }
 
 

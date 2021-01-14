@@ -2,6 +2,10 @@ const dimensions = prompt("How many squares per column/row?");
 const sketchContainer = document.querySelector(".sketch-container");
 const clearBtn = document.querySelector('.btn-clear');
 
+clearBtn.addEventListener('click', () => {
+    clearSketch();
+}); 
+
 
 function generateGrid(dimensions) {
     const e = document.querySelector('.sketch-container');
@@ -12,15 +16,10 @@ function generateGrid(dimensions) {
         e.appendChild(box);
     }
 
-
     e.style.gridTemplateRows = `repeat(${dimensions}, 1fr)`;
     e.style.gridTemplateColumns = `repeat(${dimensions}, 1fr)`;
     
 }
-
-clearBtn.addEventListener('click', () => {
-    clearSketch();
-}) 
 
 
 function changeColor(e) {
