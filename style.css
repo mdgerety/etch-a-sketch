@@ -8,13 +8,39 @@ body {
 }
 
 .sketch-container {
+    width: 500px;
+    height: 500px;
     display: grid;
 
 }
 
-.box {
-    width: 20px;
-    height: 20px;
-    border: 1px solid lightgrey;
-    border-radius: 5px;
+.control {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
+
+.btn-clear {
+    padding: .5rem;
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.box {
+    border: 1px solid lightgrey;
+    
+}
+
+.dark {
+    background-color: grey;
+}
+
+
+
+
